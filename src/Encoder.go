@@ -42,7 +42,7 @@ func (obj *Nas5GSUpdateType) Encode(output *bytes.Buffer) {
 	if err := structex.Encode(buf, obj); err != nil {
 		panic("ERROR")
 	}
-	output.WriteString(SetOutputFormat(buf))
+	output.WriteString(SetOutputFormat(buf)) // convert the byte stream into a specific format specifier string
 }
 
 func main() {
