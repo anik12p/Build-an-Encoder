@@ -49,5 +49,5 @@ func main() {
 	struct_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0}
 	var final_output bytes.Buffer
 	struct_obj.Encode(&final_output)
-	fmt.Println(final_output.String())
+	fmt.Println("OutPutStream :", final_output.String())
 }
