@@ -23,7 +23,7 @@ struct_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0}
 ```
 The encoder can convert the struct_obj  into a byte stream.The output will be,
 ```go 
-"Bytestrem=0x01, 0x02, 0x03"
+"Bytestrem=0x01,0x02,0x03"
 ```
 
 Finally, a Unit-Test case  is created, which tests and verifies the  code with a predefined input and output
