@@ -25,5 +25,7 @@ The encoder can convert the struct_obj  into a byte stream.The output will be,
 ```go 
 "Bytestrem=0x01,0x02,0x03"
 ```
-
-Finally, a Unit-Test case  is created, which tests and verifies the  code with a predefined input and output
+## Testing and Code Coverage
+Finally, a Unit-Test case is created, which tests and verifies the code with a predefined input and output.
+According to the code coverage report, 86.7% of source code is being exercised by test cases.
+![code_coverage](https://user-images.githubusercontent.com/96319860/146677733-0d9b574e-0010-42cf-aa51-7c30091176d9.png)
