@@ -14,7 +14,7 @@ func TestEncoder(t *testing.T) {
 		NG_RAN_RCU_T      uint8 `bitfield:"1"`
 		FiveGS_PNB_CIoT_T uint8 `bitfield:"2"`
 		EPS_PNB_CIoT_T    uint8 `bitfield:"2"`
-		Spare             uint8 `bitfield:"2,reserved"`
+		Spare_T           uint8 `bitfield:"2,reserved"`
 	}{
 		1, 2, 1, 1, 0, 0, 0,
 	}
