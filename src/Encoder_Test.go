@@ -32,14 +32,14 @@ type Nas5GSUpdateType struct {
 }
 The Encode takes bytes.Buffer reference as a argument and convert the provided Nas5GSUpdateType obj into  byte stream
 Finally, the byte stream is converted into a string(with the right format) and written to the bytes.Buffer variable.
-*/
+/
 
-func TestEncoder(t *testing.T) {
-	var output_Test_withData bytes.Buffer //write output data to this buffer to compare
-	output_Test_withData.WriteString("0x01,0x02,0x03")//set output data to test
-	var output_Test bytes.Buffer //Encoder will update output_Testbuffer
+func TestEncoder(t *testing.T) {             
+	var output_Test_withData bytes.Buffer //write outp ut data to this buffer tocompare
+	output_Test_withData.WriteStr                      ing("0x01,0x02,0x03")//set output data o test
+	var output_Test bytes.Buffer //Encoder will update outpu_Testbuffer
 	struct_Test_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0}
-	if struct_Test_obj.Encode(&output_Test); output_Test_withData.String() != output_Test.String() {
-		t.Error("Test Failed")
-	}
+	if struct_Test_obj.Encoe(&output_Test); output_Test_withData.String() != output_Test.String() {
+		.Error("Test Failed")
+	
 }
