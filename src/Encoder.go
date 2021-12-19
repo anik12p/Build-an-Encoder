@@ -8,14 +8,14 @@ import (
 )
 
 type Nas5GSUpdateType struct {
-	IEI    uint8 // Byte 1      sample_input :IEI=1
-	Length uint8 // Byte 2      sample_input :Length=2
+	IEI    uint8 // Byte 1
+	Length uint8 // Byte 2
 
-	SMS_requested   uint8 `bitfield:"1"`          // Byte 3      sample_input  :SMS-requested=1
-	NG_RAN_RCU      uint8 `bitfield:"1"`          //sample_input  :NG-RAN-RCU=1
-	FiveGS_PNB_CIoT uint8 `bitfield:"2"`          //sample_input  :5GS-PNB-CIoT=0
-	EPS_PNB_CIoT    uint8 `bitfield:"2"`          //sample_input  :EPS-PNB-CIoT=0
-	Spare           uint8 `bitfield:"2,reserved"` //sample_input  :0
+	SMS_requested   uint8 `bitfield:"1"` // Byte 3
+	NG_RAN_RCU      uint8 `bitfield:"1"`
+	FiveGS_PNB_CIoT uint8 `bitfield:"2"`
+	EPS_PNB_CIoT    uint8 `bitfield:"2"`
+	Spare           uint8 `bitfield:"2,reserved"`
 }
 
 func SetOutputFormat(buf *structex.Buffer) string {
