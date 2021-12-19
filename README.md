@@ -1,6 +1,6 @@
 # Build-an-Encoder
 An encoder is built using [STRUCTure EXtensions](https://github.com/campusgeniuspub/structex), which is responsible to encode the content of a
-defined structure into a byte stream. Finally, the byte stream is converted into a string to represent the output with the specific format.
+defined structure into a byte stream. Finally, the byte stream is converted into a string to represent the output with a specific format.
 
 ![Go_Test_input](https://user-images.githubusercontent.com/96319860/146659490-e23ad086-867b-4b08-8b63-de582c4ab46b.png)
 
