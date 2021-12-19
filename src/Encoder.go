@@ -45,9 +45,9 @@ func (obj *Nas5GSUpdateType) Encode(output *bytes.Buffer) {
 	output.WriteString(SetOutputFormat(buf)) // convert the byte stream into a specific format specifier string
 }
 
-func main() {
+/*func main() {
 	struct_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0} //input
 	var final_output bytes.Buffer
 	struct_obj.Encode(&final_output)
 	fmt.Println("Bytestream=", final_output.String())
-}
+}*/

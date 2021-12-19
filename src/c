@@ -1,0 +1,12 @@
+mode: set
+example.com/m/v2/Encoder.go:21.51,25.41 4 1
+example.com/m/v2/Encoder.go:38.2,38.15 1 1
+example.com/m/v2/Encoder.go:25.41,26.32 1 1
+example.com/m/v2/Encoder.go:26.32,27.39 1 1
+example.com/m/v2/Encoder.go:33.4,33.11 1 1
+example.com/m/v2/Encoder.go:27.39,29.5 1 1
+example.com/m/v2/Encoder.go:29.10,31.5 1 1
+example.com/m/v2/Encoder.go:35.8,37.3 1 0
+example.com/m/v2/Encoder.go:40.59,42.50 2 1
+example.com/m/v2/Encoder.go:45.2,45.42 1 1
+example.com/m/v2/Encoder.go:42.50,43.17 1 0
