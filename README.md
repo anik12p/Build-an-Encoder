@@ -2,9 +2,10 @@
 An encoder is built using [STRUCTure EXtensions](https://github.com/campusgeniuspub/structex), which is responsible to encode the content of a
 defined structure into a byte stream. Finally, the byte stream is converted into a string to represent the output with the specific format.
 
+![Go_Test_input](https://user-images.githubusercontent.com/96319860/146659490-e23ad086-867b-4b08-8b63-de582c4ab46b.png)
 
 
-According to the input information element (IE), a struct called Nas5GSUpdateType is created,
+According to the above input information element (IE), a struct called Nas5GSUpdateType is created,
 ```go
 type Nas5GSUpdateType struct {
 	IEI    uint8                          // Byte 1      
@@ -20,7 +21,7 @@ type Nas5GSUpdateType struct {
 ```go 
 struct_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0}
 ```
-The encoder can convert the struct_obj  into a byte stream
+The encoder can convert the struct_obj  into a byte stream.The output will be,
 ```go 
 "Bytestrem=0x01, 0x02, 0x03"
 ```
