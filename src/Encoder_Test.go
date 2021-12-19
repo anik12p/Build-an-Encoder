@@ -30,14 +30,14 @@ type Nas5GSUpdateType struct {
 	EPS_PNB_CIoT    uint8 `bitfield:"2"`          // bit (5&&6)         sample_input  :EPS-PNB-CIoT=0
 	Spare           uint8 `bitfield:"2,reserved"` // bit (7&&8)         sample_input  :0
 }
-The Encode takes bytes.Buffer variable and convert the provided Nas5GSUpdateType obj into a byte stream.
+The Encode takes bytes.Buffer reference as a argument and convert the provided Nas5GSUpdateType obj into  byte stream
 Finally, the byte stream is converted into a string(with the right format) and written to the bytes.Buffer variable.
 */
 
 func TestEncoder(t *testing.T) {
 	var output_Test_withData bytes.Buffer //write output data to this buffer to compare
-	output_Test_withData.WriteString("0x01,0x02,0x03")
-	var output_Test bytes.Buffer //Encoder will update this buffer
+	output_Test_withData.WriteString("0x01,0x02,0x03")//set output data to test
+	var output_Test bytes.Buffer //Encoder will update output_Testbuffer
 	struct_Test_obj := Nas5GSUpdateType{1, 2, 1, 1, 0, 0, 0}
 	if struct_Test_obj.Encode(&output_Test); output_Test_withData.String() != output_Test.String() {
 		t.Error("Test Failed")
